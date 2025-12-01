@@ -1,0 +1,94 @@
+/* ===== FILTER BUTTONS ===== */
+.project-filters {
+  position: fixed;
+  top: var(--filter-top-offset);
+  width: 100%;
+  z-index: 900;
+  background: rgba(255, 255, 255, 0);
+  padding: 10px 0;
+  transition: top 0.25s ease;
+}
+
+.projects-page,
+.projects {
+  padding-top: calc(var(--header-height) + 70px);
+  padding-bottom: var(--projects-bottom-safe);
+  transition: padding-bottom 0.22s ease;
+}
+
+.projects-page h2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.filter-wrapper {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 10px 22px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: #333;
+  color: white;
+}
+
+/* ===== GRID LAYOUT ===== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 500px);
+  justify-content: center;      /* <-- centers the entire grid */
+  gap: 40px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: 500px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== CARD ===== */
+.project-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transform-origin: center;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.project-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 18px;
+}
+

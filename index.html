@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adin Adli Irfani | Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header id="main-header">
+    <div class="header-container">
+      <div class="logo-area">
+        <h1 class="site-title">Adin Adli Irfani</h1>
+        <p class="site-subtitle">GIS Specialist | Oceanographer | Spatial Data Engineering</p>
+      </div>
+      <nav class="nav-bar">
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Past Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero" class="hero-section">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h2>Welcome!</h2>
+        <p>
+          I’m a GIS specialist experienced in marine spatial analysis and climate-related hazard studies. 
+          My background includes working with tides, shoreline geometry, inundation scenarios, and model-based 
+          coastal datasets. Although much of my work focuses on coastal and marine domains, I’m capable 
+          of delivering broader GIS solutions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+        <!-- About Section -->
+    <section id="about" class="section about">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="images/profile.jpg" alt="Adin Adli" />
+        </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            Adin is a GIS Specialist with two years of experience supporting
+            environmental and development consultancy projects. Proficient in
+            spatial data management, remote sensing, and programming, he is eager
+            to strengthen his technical capacity through the Geospatial Developer
+            track and contribute to the development of intelligent geospatial
+            systems.
+          </p>
+        </div>
+      </div>
+
+      <!-- ===== TIMELINE SECTION ===== -->
+      <div class="timeline">
+        <h2>Recent Work & Education</h2>
+
+        <div class="timeline-container">
+          
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <h3>GIS & Marine Officer</h3>
+              <h4><strong>PT Ripta Jagabhumi Nusantara, Indonesia</strong></h4>
+              <h4>August 2025 – Present</h4>
+              <p>
+                Supporting environmental analysis and coastal development projects using
+                survey, remote sensing, and LiDAR data.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item right">
+            <div class="timeline-content">
+              <h3>Expert Assistant</h3>
+              <h4><strong>Center of Coastal and Marine Area Development, Bandung Institute of Technology, Indonesia</strong></h4>
+              <h4>July 2023 – July 2025</h4>
+              <p>
+                Focused on coastal hazards, vulnerability assessment, and GIS-based
+                spatial analysis for sea-level rise risks.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <h3>B.Sc</h3>
+              <h4><strong>Bandung Institute of Technology, Indonesia</strong></h4>
+              <h4>2019-2023</h4>
+              <p>
+                Presented research on sea-level rise impacts in Bekasi and Karawang Regencies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="section projects">
+      <h2>Past Projects</h2>
+
+      <div class="carousel-container">
+        <button class="carousel-btn prev" aria-label="Previous Project">&#10094;</button>
+
+        <div class="carousel-wrapper">
+          <div class="carousel-track">
+
+            <div class="project-card" data-id="slr" data-category="academic" data-external="https://arcg.is/11HPnO0">
+              <img src="images/slr-1.png" alt="">
+              <div class="card-info">
+                <h3>Study on The Risk of Rising Sea Levels as a Result of Climate Change in Bekasi and Karawang Regencies</h3>
+                <p>Undergraduate thesis project assessing coastal risk, hazard, and vulnerability.</p>
+              </div>
+            </div>
+
+            <div class="project-card" data-id="inatews" data-category="professional">
+              <img src="images/tews-0.png" alt="">
+              <div class="card-info">
+                <h3>System Processing Development of InaTEWS Merah Putih</h3>
+                <p>Professional work involving geospatial preprocessing, tsunami source construction, numerical model automation, and tsunami propagation visualization for Indonesia’s national tsunami early warning system.</p>
+              </div>
+            </div>
+
+            <div class="project-card" data-id="lst" data-category="personal">
+              <img src="images/lst-0.png" alt="">
+              <div class="card-info">
+                <h3>Model Tool Creation for Land Surface Temperature Analysis</h3>
+                <p>Developed an automated Land Surface Temperature (LST) processing tool using ArcMap ModelBuilder to extract LST from multispectral satellite imagery through radiometric correction, brightness temperature conversion, and land surface emissivity estimation.</p>
+              </div>
+            </div>
+
+            <div class="project-card" data-id="las" data-category="professional">
+              <img src="images/las-3.jpg" alt="">
+              <div class="card-info">
+                <h3>Vegetation Inventory & LiDAR-Based Carbon Assessment</h3>
+                <p>Professional forest inventory and LiDAR analysis for biomass and carbon estimation across primary and secondary forests.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <button class="carousel-btn next" aria-label="Next Project">&#10095;</button>
+      </div>
+
+      <div class="carousel-dots"></div>
+      <div class="projects-footer">
+        <a href="projects/projects.html" class="show-more-btn">Show More</a>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT / FOOTER SECTION ===== -->
+    <footer id="contact" class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h2>Contact Me</h2>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:adinadliirfani@gmail.com">adinadliirfani@gmail.com</a></li>
+            <li><strong>Location:</strong> Bandung, Indonesia</li>
+          </ul>
+        </div>
+
+        <div class="footer-right">
+          <h3>Follow Me</h3>
+          <div class="social-icons">
+            <a href="https://linkedin.com/in/adin-adli" target="_blank"><img src="images/icons/linkedin.svg" alt="LinkedIn" /></a>
+            <a href="https://github.com/adinadli" target="_blank"><img src="images/icons/github.svg" alt="GitHub" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Adin Adli Irfani. All rights reserved.</p>
+        <a href="#hero" class="back-to-top">↑ Back to Top</a>
+      </div>
+    </footer>
+
+
+  </main>
+
+  <!-- ===== PROJECT MODAL ===== -->
+  <div id="project-modal" class="modal">
+    <div class="modal-overlay"></div>
+
+    <div class="modal-content">
+      <button class="modal-close">✕</button>
+      <div class="modal-inner"></div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { createProjectModal } from "./js/modalHandler.js";
+
+    createProjectModal();
+    document.querySelectorAll(".project-card").forEach(card => {
+      card.addEventListener("click", () => {
+        const external = card.dataset.external;
+        if (external) {
+          window.open(external, "_blank"); // or "_self" if you want same tab
+          return;
+        }
+        const id = card.dataset.id;
+        window.dispatchEvent(new CustomEvent("openProjectModal", { detail: { id } }));
+      });
+    });
+
+  </script>
+  <script src="js/script.js"></script>
+  
+</body>
+</html>
